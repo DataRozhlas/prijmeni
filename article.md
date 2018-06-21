@@ -1,41 +1,32 @@
-title: "Data z mobilů:<br>Praha se denně nafoukne o polovinu, v centru jsou návštěvníci v převaze"
-perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat."
-published: "21. dubna 2018"
+title: "V Česku je skoro 300 tisíc příjmení, každé třetí má jen jednoho držitele. Podívejte se, jak je na tom to vaše"
+perex: "Podle nejčerstvějších dat mají Češi 284 603 různých příjmení. Některá patří k tradičním českým přízviskům a stáří jejich nositelů kopíruje průměrný věk populace, desítky tisíc z nich jsou unikátních. Jak je starý průměrný držitel vašeho příjmení? A jak si stojíte v porovnání s Nováky nebo Svobodovými?"
+published: "22. června 2018"    
 coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
 coverimg_note: "Foto <a href='#'>ČTK</a>"
 styles: []
-# snadné načítání csv: d3csv v libraries, d3.csv("soubor.csv").then(function(data){} ) v kódu
-libraries: [] #jquery, d3, d3v5, d3csv, highcharts, datatables
-options: [noheader] #wide, noheader (, nopic)
+libraries: [jquery, "https://code.highcharts.com/highcharts.js", "https://code.highcharts.com/highcharts-more.js"]
+options: "noheader, nopic"
 ---
-<left>
-	<p>
-	<b>KAREL HYNEK MÁCHA</b>
-	</p><p>
-	Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-	</p>
-</left>
 
-Během dne se lidé v Praze soustřeďují v okolí administrativních center a obchodů, po poledni se tak nejvíc zahustí okolí Andělu, centrum Prahy (Vodičkova ulice a Petrské náměstí) a Brumlovka nedaleko Budějovické. Na poslední jmenované adrese sídlí řada velkých korporací, mezi nimi i Microsoft nebo ČEZ. Pro srovnání, na zmíněných místech je ve „špičce“ okolo šesti stovek osob na jeden hektar, průměr Prahy je 25 obyvatel na [hektar](https://cs.wikipedia.org/wiki/Hektar) (Václavské náměstí má rozlohu asi 4 hektary).
+Česká příjmení dokumentují podrobná data, která pravidelně vydává [ministerstvo vnitra](http://www.mvcr.cz/clanek/cetnost-jmen-a-prijmeni-722752.aspx). Ta jsme zpracovali do interaktivní miniaplikace, ve které můžete prozkoumat popularitu Vašeho nebo jakéhokoliv jiného příjmení. Aplikace zobrazí graf popularity příjmení i medián roku narození jeho nositelů - tedy rok, před nímž i po němž se narodila právě polovina lidí s daným jménem. Mužské a ženské varianty příjmení jsou v databázi evidovány odděleně. 
 
-Naopak v noci se nejvíc lidí se „namačká“ ve Vršovicích, jde o 430 osob na hektar.
+<div class="ui-widget">
+  <label for="name1">Jméno 1: </label>
+  <input id="name1" class="nameac">
+  <label for="name2">Jméno 2: </label>
+  <input id="name2" class="nameac">
+</div>
+<div id="appchart"></div>
+<div id="median1info" class="medianinfo"></div>
+<div id="median2info" class="medianinfo"></div>
 
-Detaily si můžete prohlédnout v následující mapě, kterou z dat mobilních operátorů zpracoval pražský [Institut plánování a rozvoje](http://www.iprpraha.cz/).
+Data aktuální k roku 2017 ukazují počet žijících občanů ČR s konkrétním příjmením. Ukazují, že téměř třetina z unikátních příjmení, 86 868, má pouze jednoho vlastníka. Reálně tedy hrozí jejich „vyhynutí“. Celkový počet příjmení by tak nebýt imigrace přirozenou cestou klesal.
 
-<wide>_Pokud vás zajímá, kolik lidí bývá ve dne a v noci ve vaší čtvrti, najděte si ji na mapě, přepněte se na časové řezy, vyberte přepínač hustota osob a potom pohybujte posuvníkem nahoře._</wide>
+Počet jedinečných příjmení podle roku narození je víceméně shodný s [věkovou strukturou obyvatelstva](https://www.czso.cz/staticke/animgraf/cz/index.html?lang=cz). Nositelů tradičních českých příjmení jako Novák, Svoboda nebo Dvořák totiž přibývalo nejvíce právě v dobách populačního boomu, nejvýrazněji v 70. letech. Nejvýraznější výjimkou mezi příjmeními s více než tisíci nositeli je Nguyen - mediánový jejich narození je 1995.
 
+<div id="uniqnames"></div>
 
-## Data na prodej
-<right>
-	<p>
-	<b>KAREL HYNEK MÁCHA</b>
-	</p><p>
-	Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-	</p>
-</right>
+Nejdelší české příjmení je ženské, šestislovné a jde o kombinaci zřejmě španělského a českého příjmení. Nejdelší ženské jednoslovné příjmení má 25 znaků, mužské pak 24. Nejkratších, tedy dvoupísmenných, příjmení je celkem 67, mezi jinými Áč, Cé, Ok, Ng, Qi nebo Šé. 
 
-I pokud netelefonujeme nebo neposíláme SMS, telefon pravidelně komunikuje s vysílači v síti mobilního operátora. Z dat o síle signálu a použité anténě je možné odvodit, kde se přibližně telefon nachází a jak dlouhou dobu na místě strávil.
+V Česku existuje také celkem 131 palindromických příjmení - tedy takových, které se zezadu i zepředu píšou stejně. Patří mezi ně Renner, Soros nebo Čišič. Ta nejdelší, sedmipísmenná, jsou tři: Anikina, Anisina a Tartrat.
 
-Mobilní operátor má [zákonnou povinnost](https://www.zakonyprolidi.cz/cs/2005-127/zneni-20160919#p97-3) takové informace uchovávat, a to půl roku do minulosti, přistupovat k nim ale mohou jen bezpečnostní složky, typicky policie nebo rozvědka.
-
-Operátoři ale obdobné informace mohou anonymizovat (tedy zbavit identifikace konkrétního uživatele) a agregovat, tedy spojit informace o jednotlivcích do jakýchsi skupin. Výsledná obecná čísla pak přeprodávají dál, například marketingovým firmám či dopravním analytikům. Zpětně z nich nejde dovodit, kde se pohybuje každý jednotlivec, dávají ale určitý přehled o obecném chování obyvatel nějakého místa.

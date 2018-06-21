@@ -1,11 +1,19 @@
-li {
-    background: none !important;
+#name {
+    background-color: none;
 }
 
-ul, ol {
-    list-style: initial !important;
+.wronginput {
+    background-color: pink;
 }
 
-hr {
-    max-width: none !important;
+.medianinfo {
+    font-size: small;
+}
+
+#median2info, #uniqnames {
+    padding-bottom: 5vh;
+}
+
+#appchart {
+    padding-top: 3vh;
 }
