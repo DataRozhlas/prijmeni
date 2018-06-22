@@ -22,11 +22,11 @@ options: "noheader, nopic"
 
 Data aktuální k roku 2017 ukazují počet žijících občanů ČR s konkrétním příjmením. Ukazují, že téměř třetina z unikátních příjmení, 86 868, má pouze jednoho vlastníka. Reálně tedy hrozí jejich „vyhynutí“. Celkový počet příjmení by tak nebýt imigrace přirozenou cestou klesal.
 
-Počet jedinečných příjmení podle roku narození je víceméně shodný s [věkovou strukturou obyvatelstva](https://www.czso.cz/staticke/animgraf/cz/index.html?lang=cz). Nositelů tradičních českých příjmení jako Novák, Svoboda nebo Dvořák totiž přibývalo nejvíce právě v dobách populačního boomu, nejvýrazněji v 70. letech. Nejvýraznější výjimkou mezi příjmeními s více než tisíci nositeli je Nguyen - mediánový jejich narození je 1995.
+Počet jedinečných příjmení podle roku narození je víceméně shodný s [věkovou strukturou obyvatelstva](https://www.czso.cz/staticke/animgraf/cz/index.html?lang=cz). Nositelů tradičních českých příjmení jako Novák, Svoboda nebo Dvořák totiž přibývalo nejvíce právě v dobách populačního boomu, nejvýrazněji v 70. letech. Nejvýraznější výjimkou mezi příjmeními s více než tisíci nositeli je Nguyen - medián jejich narození je 1995.
 
 <div id="uniqnames"></div>
 
-Nejdelší české příjmení je ženské, šestislovné a jde o kombinaci zřejmě španělského a českého příjmení. Nejdelší ženské jednoslovné příjmení má 25 znaků, mužské pak 24. Nejkratších, tedy dvoupísmenných, příjmení je celkem 67, mezi jinými Áč, Cé, Ok, Ng, Qi nebo Šé. 
+Nejdelší české příjmení je ženské, šestislovné a jde o kombinaci zřejmě španělského a českého příjmení: Martins Ferreira Pereira De Magalhaes Mandová. Nejdelší ženské jednoslovné příjmení má 25 znaků, mužské pak 24. Nejkratších, tedy dvoupísmenných, příjmení je celkem 67, mezi jinými Áč, Cé, Ok, Ng, Qi nebo Šé. 
 
 V Česku existuje také celkem 131 palindromických příjmení - tedy takových, které se zezadu i zepředu píšou stejně. Patří mezi ně Renner, Soros nebo Čišič. Ta nejdelší, sedmipísmenná, jsou tři: Anikina, Anisina a Tartrat.
 
