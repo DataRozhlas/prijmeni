@@ -8,7 +8,7 @@ libraries: [jquery, "https://code.highcharts.com/highcharts.js", "https://code.h
 options: "noheader, nopic"
 ---
 
-Česká příjmení dokumentují podrobná data, která pravidelně vydává [ministerstvo vnitra](http://www.mvcr.cz/clanek/cetnost-jmen-a-prijmeni-722752.aspx). Ta jsme zpracovali do interaktivní miniaplikace, ve které můžete prozkoumat popularitu Vašeho nebo jakéhokoliv jiného příjmení. Aplikace zobrazí graf popularity příjmení i medián roku narození jeho nositelů - tedy rok, před nímž i po němž se narodila právě polovina lidí s daným jménem. Mužské a ženské varianty příjmení jsou v databázi evidovány odděleně. 
+Česká příjmení dokumentují podrobná data, která pravidelně vydává [ministerstvo vnitra](http://www.mvcr.cz/clanek/cetnost-jmen-a-prijmeni-722752.aspx). Ta jsme zpracovali do interaktivní miniaplikace, ve které můžete prozkoumat popularitu vašeho nebo jakéhokoliv jiného příjmení. Aplikace zobrazí graf popularity příjmení i medián roku narození jeho nositelů - tedy rok, před nímž i po němž se narodila právě polovina lidí s daným jménem. Mužské a ženské varianty příjmení jsou v databázi evidovány odděleně. 
 
 <div class="ui-widget">
   <label for="name1">Jméno 1: </label>
@@ -26,7 +26,7 @@ Počet jedinečných příjmení podle roku narození je víceméně shodný s [
 
 <div id="uniqnames"></div>
 
-Nejdelší české příjmení je ženské, šestislovné a jde o kombinaci zřejmě španělského a českého příjmení: Martins Ferreira Pereira De Magalhaes Mandová. Nejdelší ženské jednoslovné příjmení má 25 znaků, mužské pak 24. Nejkratších, tedy dvoupísmenných, příjmení je celkem 67, mezi jinými Áč, Cé, Ok, Ng, Qi nebo Šé. 
+Nejdelší české příjmení je ženské, šestislovné a jde o kombinaci zřejmě španělského a českého příjmení: Martins Ferreira Pereira De Magalhaes Mandová. Nejdelší ženské jednoslovné příjmení má 25 znaků, mužské pak 24. Nejkratších, tedy dvoupísmenných příjmení, je celkem 67, mezi jinými Áč, Cé, Ok, Ng, Qi nebo Šé. 
 
 V Česku existuje také celkem 131 palindromických příjmení - tedy takových, které se zezadu i zepředu píšou stejně. Patří mezi ně Renner, Soros nebo Čišič. Ta nejdelší, sedmipísmenná, jsou tři: Anikina, Anisina a Tartrat.
 
